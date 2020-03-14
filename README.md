@@ -1,6 +1,3 @@
-AngularJS:
-
-https://www.tutorialspoint.com/angularjs
 
 Angular6:
 
