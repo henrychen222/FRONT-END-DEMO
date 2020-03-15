@@ -17,6 +17,11 @@ import NumberListNoKey from "./ListsKeys/NumberListNoKey";
 import NumberList from "./ListsKeys/NumberList";
 import Blog from "./ListsKeys/Blog";
 import NumberListEmbedding from "./ListsKeys/NumberListEmbedding";
+import LoginControl from "./ConditionalRendering/LoginControl";
+import Mailbox from "./ConditionalRendering/Mailbox";
+import LoginControl2 from "./ConditionalRendering/LoginControl2";
+import Page from "./ConditionalRendering/Page";
+
 
 /**
  * functional/stateless component
@@ -27,6 +32,8 @@ const App_ReactOfficialMain = () => {
         {id: 1, title: 'Hello World', content: 'Welcome to learning React!'},
         {id: 2, title: 'Installation', content: 'You can install React from npm.'}
     ];
+
+    const messages = ['React', 'Re: React', 'Re:Re: React'];
 
     return (
         <div>
@@ -77,6 +84,16 @@ const App_ReactOfficialMain = () => {
             <Blog posts={posts}/>
             <br/>
             <NumberListEmbedding numbers={numbers}/>
+            <br/>
+
+            <h2>******************** Conditional Rendering ********************</h2>
+            {/*031420 evening */}
+            <LoginControl/>
+            <br/>
+            <LoginControl2/>
+            <Mailbox unreadMessages={messages}/>
+            <br/>
+            <Page/>
 
         </div>
     );
