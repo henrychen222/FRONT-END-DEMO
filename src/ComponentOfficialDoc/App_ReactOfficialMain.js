@@ -21,6 +21,9 @@ import LoginControl from "./ConditionalRendering/LoginControl";
 import Mailbox from "./ConditionalRendering/Mailbox";
 import LoginControl2 from "./ConditionalRendering/LoginControl2";
 import Page from "./ConditionalRendering/Page";
+import Toggle from "./HandlingEvents/Toggle";
+import ActionLink from "./HandlingEvents/ActionLink";
+import LoggingButton from "./HandlingEvents/LoggingButton";
 
 
 /**
@@ -94,6 +97,15 @@ const App_ReactOfficialMain = () => {
             <Mailbox unreadMessages={messages}/>
             <br/>
             <Page/>
+            <br/>
+
+            <h2>******************** Handling Events ********************</h2>
+            <ActionLink/>
+            <br/>
+            <Toggle/>
+            <br/>
+            <LoggingButton/>
+
 
         </div>
     );
