@@ -24,7 +24,12 @@ import Page from "./ConditionalRendering/Page";
 import Toggle from "./HandlingEvents/Toggle";
 import ActionLink from "./HandlingEvents/ActionLink";
 import LoggingButton from "./HandlingEvents/LoggingButton";
-
+import Tick from "./StateAndLifecycle/Tick";
+import Clock2 from "./StateAndLifecycle/Clock2";
+import Clock3 from "./StateAndLifecycle/Clock3";
+import Welcome from "./ComponentsProps/Welcome";
+import Comment from "./ComponentsProps/Comment";
+import Comment2 from "./ComponentsProps/Comment2";
 
 /**
  * functional/stateless component
@@ -37,6 +42,15 @@ const App_ReactOfficialMain = () => {
     ];
 
     const messages = ['React', 'Re: React', 'Re:Re: React'];
+
+    const comment = {
+        date: new Date(),
+        text: 'I hope you enjoy learning React!',
+        author: {
+            name: 'Hello Kitty',
+            avatarUrl: 'https://placekitten.com/g/64/64',
+        },
+    };
 
     return (
         <div>
@@ -105,7 +119,31 @@ const App_ReactOfficialMain = () => {
             <Toggle/>
             <br/>
             <LoggingButton/>
+            <br/>
 
+            <h2>******************** State and Lifecycle ********************</h2>
+            <Tick/>
+            <br/>
+            <Clock2/>
+            <br/>
+            <Clock3/>
+            <br/>
+
+            <h2>******************** Components and Props ********************</h2>
+            <Welcome name="Sara"/>
+            <Welcome name="Cahal"/>
+            <Welcome name="Edite"/>
+            <br/>
+            <Comment
+                date={comment.date}
+                text={comment.text}
+                author={comment.author}
+            />
+            <Comment2
+                date={comment.date}
+                text={comment.text}
+                author={comment.author}
+            />
 
         </div>
     );
