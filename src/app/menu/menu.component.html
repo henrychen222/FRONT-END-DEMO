@@ -1,0 +1,18 @@
+<!--
+10.24 night
+https://www.tutorialspoint.com/angular_material7/angular_material7_menu.htm
+<mat-menu>: used to create a menu and attach it with a control with material design styling and animation capabilities
+-->
+<button mat-button [matMenuTriggerFor]="menu">File</button>
+
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>New</button>
+  <button mat-menu-item>Open</button>
+  <button mat-menu-item [matMenuTriggerFor]="recent">Recent</button>
+</mat-menu>
+
+<!--   File 1 and File 2 will be trigger by clicking Recent button-->
+<mat-menu #recent>
+  <button mat-menu-item>File 1</button>
+  <button mat-menu-item>File 2</button>
+</mat-menu>

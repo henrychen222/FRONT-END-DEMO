@@ -1,0 +1,48 @@
+<!--
+10.25 night
+https://www.tutorialspoint.com/angular_material7/angular_material7_tabs.htm
+https://material.angular.io/components/tabs/overview
+<mat-tab-group>
+  <mat-tab>
+-->
+<mat-tab-group>
+  <mat-tab label="A">Apple</mat-tab>
+  <mat-tab label="B">Banana</mat-tab>
+  <mat-tab label="C">Carrot</mat-tab>
+</mat-tab-group>
+
+<br><br><br><br>
+<!--lazy loading: Tab contents can be lazy loaded by declaring the body in a ng-template with the matTabContent attribute-->
+<mat-tab-group>
+  <mat-tab label="First">
+    <ng-template matTabContent>
+      The First Content
+    </ng-template>
+  </mat-tab>
+  <mat-tab label="Second">
+    <ng-template matTabContent>
+      The Second Content
+    </ng-template>
+  </mat-tab>
+</mat-tab-group>
+
+<br><br><br><br>
+<!--Label alignment-->
+<mat-tab-group mat-align-tabs="start">
+  <mat-tab label="First">Content 1</mat-tab>
+  <mat-tab label="Second">Content 2</mat-tab>
+  <mat-tab label="Third">Content 3</mat-tab>
+</mat-tab-group>
+
+<mat-tab-group mat-align-tabs="center">
+  <mat-tab label="First">Content 1</mat-tab>
+  <mat-tab label="Second">Content 2</mat-tab>
+  <mat-tab label="Third">Content 3</mat-tab>
+</mat-tab-group>
+
+<mat-tab-group mat-align-tabs="end">
+  <mat-tab label="First">Content 1</mat-tab>
+  <mat-tab label="Second">Content 2</mat-tab>
+  <mat-tab label="Third">Content 3</mat-tab>
+</mat-tab-group>
+

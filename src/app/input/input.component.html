@@ -1,0 +1,19 @@
+<!--7.16 morning on road   10.24 night-->
+<form class="tp-form">
+  <mat-form-field class="tp-full-width">
+    <input matInput placeholder="Favorite Food" value="Pasta">
+  </mat-form-field>
+  <mat-form-field class="tp-full-width">
+    <textarea matInput placeholder="Enter your comment"></textarea>
+  </mat-form-field>
+  <mat-form-field class="tp-full-width">
+    <input matInput placeholder="Email" [formControl]="emailFormControl">
+    <mat-error *ngIf="emailFormControl.hasError('email')
+         && !emailFormControl.hasError('required')">
+      Please enter a valid email address
+    </mat-error>
+    <mat-error *ngIf="emailFormControl.hasError('required')">
+      Email is <strong>required</strong>
+    </mat-error>
+  </mat-form-field>
+</form>

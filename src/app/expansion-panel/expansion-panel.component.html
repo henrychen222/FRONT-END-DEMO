@@ -1,0 +1,32 @@
+<!--
+10.25 night
+https://www.tutorialspoint.com/angular_material7/angular_material7_expansion_panel.htm
+https://material.angular.io/components/expansion/overview
+    <mat-expansion-panel-header> − Represents the header section.
+                                   Contains summary of panel and acts as control to expand or collapse the panel.
+    <mat-panel-title> − Represents the panel title.
+    <mat-panel-description> − Represents the panel summary.
+    <mat-action-row> − Represents the actions panel at the bottom.
+-->
+<mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      Personal Data
+    </mat-panel-title>
+    <mat-panel-description>
+      Type name and age
+    </mat-panel-description>
+  </mat-expansion-panel-header>
+
+  <mat-form-field>
+    <input matInput placeholder="Name">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Age">
+  </mat-form-field>
+
+  <mat-action-row>
+    <button mat-button>Click me</button>
+  </mat-action-row>
+
+</mat-expansion-panel>

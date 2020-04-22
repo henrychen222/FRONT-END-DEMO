@@ -1,0 +1,15 @@
+<!--
+10.24 night
+<mat-slide-toggle>: used as a on/off switch with material design styling and animation capabilities
+-->
+<mat-slide-toggle
+  class="tp-margin"
+  [checked]="checked"
+  [disabled]="disabled">
+  Slide !
+</mat-slide-toggle>
+
+<section class="tp-section">
+  <mat-checkbox class="tp-margin" [(ngModel)]="checked">Checked</mat-checkbox>
+  <mat-checkbox class="tp-margin" [(ngModel)]="disabled">Disabled</mat-checkbox>
+</section>

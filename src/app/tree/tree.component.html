@@ -1,0 +1,22 @@
+<!--
+10.25 night
+https://www.tutorialspoint.com/angular_material7/angular_material7_tree.htm
+-->
+<h2>
+  tutorialspoint tree
+</h2>
+
+<mat-tree [dataSource]="dataSource" [treeControl]="treeControl" class="example-tree">
+  <mat-tree-node *matTreeNodeDef="let node" matTreeNodeToggle matTreeNodePadding>
+    <button mat-icon-button disabled></button>
+    {{node.filename}}:{{node.type}}
+  </mat-tree-node>
+  <mat-tree-node *matTreeNodeDef="let node;when: hasChild" matTreeNodePadding>
+    <button mat-icon-button matTreeNodeToggle [attr.aria-label]="'toggle ' + node.filename">
+      <mat-icon class="mat-icon-rtl-mirror">
+        {{treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}
+      </mat-icon>
+    </button>
+    {{node.filename}}
+  </mat-tree-node>
+</mat-tree>

@@ -1,0 +1,17 @@
+<!--
+10.24 night
+<mat-select>: used for <select> for enhance material design based styling
+-->
+<form>
+  <h4>mat-select</h4>
+  <mat-form-field>
+    <mat-select placeholder="Favorite food"
+                [(ngModel)]="selectedValue" name="food">
+      <mat-option *ngFor="let food of foods"
+                  [value]="food.value">
+        {{food.display}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <p> Selected food: {{selectedValue}} </p>
+</form>

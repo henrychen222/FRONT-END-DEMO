@@ -1,0 +1,48 @@
+<!--
+10.27 evening
+https://material.angular.io/components/button-toggle/overview
+https://www.tutorialspoint.com/angular_material7/angular_material7_button_toggle.htm
+<mat-button-toggle-group>
+   <mat-button-toggle>
+
+fix <mat-icon>
+https://stackoverflow.com/questions/49796212/angular-material-icons-not-working
+-->
+
+<mat-button-toggle-group #group="matButtonToggleGroup">
+  <mat-button-toggle value="left">
+    <mat-icon>format_align_left</mat-icon>
+  </mat-button-toggle>
+  <mat-button-toggle value="center">
+    <mat-icon>format_align_center</mat-icon>
+  </mat-button-toggle>
+  <mat-button-toggle value="right">
+    <mat-icon>format_align_right</mat-icon>
+  </mat-button-toggle>
+  <mat-button-toggle value="justify">
+    <mat-icon>format_align_justify</mat-icon>
+  </mat-button-toggle>
+</mat-button-toggle-group>
+<div class="tp-selected-value">Selected value: {{group.value}}</div>
+
+
+<br><br>
+<p>
+  Default appearance:
+  <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+    <mat-button-toggle value="bold">Bold</mat-button-toggle>
+    <mat-button-toggle value="italic">Italic</mat-button-toggle>
+    <mat-button-toggle value="underline">Underline</mat-button-toggle>
+  </mat-button-toggle-group>
+</p>
+
+<p>
+  Legacy appearance:
+  <mat-button-toggle-group appearance="legacy" name="fontStyle" aria-label="Font Style">
+    <mat-button-toggle value="bold">Bold</mat-button-toggle>
+    <mat-button-toggle value="italic">Italic</mat-button-toggle>
+    <mat-button-toggle value="underline">Underline</mat-button-toggle>
+  </mat-button-toggle-group>
+</p>
+
+

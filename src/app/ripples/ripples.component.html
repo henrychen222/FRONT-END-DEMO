@@ -1,0 +1,21 @@
+<!--
+10.29 evening
+https://www.tutorialspoint.com/angular_material7/angular_material7_ripples.htm
+https://material.angular.io/components/ripple/examples
+-->
+<mat-checkbox [(ngModel)]="centered" class="tp-ripple-checkbox">Centered</mat-checkbox>
+<mat-checkbox [(ngModel)]="disabled" class="tp-ripple-checkbox">Disabled</mat-checkbox>
+<mat-checkbox [(ngModel)]="unbounded" class="tp-ripple-checkbox">Unbounded</mat-checkbox>
+<section>
+  <mat-form-field class="tp-ripple-form-field">
+    <input matInput [(ngModel)]="radius" type="number" placeholder="Radius">
+  </mat-form-field>
+  <mat-form-field class="tp-ripple-form-field">
+    <input matInput [(ngModel)]="color" type="text" placeholder="Color">
+  </mat-form-field>
+</section>
+
+<div class="tp-ripple-container mat-elevation-z4"
+     matRipple [matRippleCentered]="centered" [matRippleDisabled]="disabled" [matRippleUnbounded]="unbounded"
+     [matRippleRadius]="radius" [matRippleColor]="color">
+</div>

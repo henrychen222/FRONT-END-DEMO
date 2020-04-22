@@ -1,0 +1,17 @@
+<!--
+10.29 evening
+https://www.tutorialspoint.com/angular_material7/angular_material7_snackbar.htm
+https://material.angular.io/components/snack-bar/overview
+-->
+
+<button mat-button (click)="openSnackBar('Party', 'act')">Show snack-bar</button>
+
+<br><br><br>
+<mat-form-field>
+  <input matInput value="Disco party!" placeholder="Message" #message>
+</mat-form-field>
+<mat-form-field>
+  <input matInput value="Dance" placeholder="Action" #action>
+</mat-form-field>
+<button mat-button (click)="openSnackBar2(message.value, action.value)">Show snack-bar</button>
+
