@@ -1,0 +1,22 @@
+<h3>Basic</h3>
+<button [ibmButton]="ibmButton" [size]="size">Button</button>
+&nbsp;
+<button [ibmButton]="ibmButton" [size]="size" disabled="true">Button</button>
+&nbsp;
+<button [ibmButton]="ibmButton" [size]="size">
+  With icon
+  <svg class="bx--btn__icon" ibmIconAdd size="20"></svg>
+</button>
+
+<br><br><br>
+<h3>Icon Only</h3>
+<button
+  [ibmButton]="ibmButton"
+  [size]="size"
+  [iconOnly]="true"
+  [hasAssistiveText]="true"
+  [assistiveTextPlacement]="assistiveTextPlacement"
+  [assistiveTextAlignment]="assistiveTextAlignment">
+  <svg class="bx--btn__icon" ibmIconCopy size="20"></svg>
+  <span class="bx--assistive-text">Icon description</span>
+</button>
