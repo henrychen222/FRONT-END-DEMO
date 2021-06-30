@@ -1,0 +1,21 @@
+/**
+06/16/21 evneing
+https://www.tutorialspoint.com/sass/directives_extend.htm
+https://sass-lang.com/documentation/at-rules/extend
+compile:
+sass --watch extend.scss:extend.css
+*/
+
+.style {
+  font-size: 30px;
+  font-style: italic;
+}
+
+h2 {
+  color: #787878;
+  @extend .style  // tells Sass that one selector should inherit the styles of another
+}
+
+.container {
+  @extend h2
+}

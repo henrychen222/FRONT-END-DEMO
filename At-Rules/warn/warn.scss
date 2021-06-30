@@ -1,0 +1,9 @@
+/**
+06/29/21 morning
+https://www.tutorialspoint.com/sass/directives_warn.htm
+https://sass-lang.com/documentation/at-rules/warn
+
+sass warn.scss warn.css
+*/
+$main-color:  #bdc3c7;
+@warn "Darker: " darken($main-color, 30%);

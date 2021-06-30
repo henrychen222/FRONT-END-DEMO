@@ -1,0 +1,14 @@
+/**
+06/16/21 evneing
+https://sass-lang.com/documentation/at-rules/debug
+https://www.tutorialspoint.com/sass/directives_debug.htm
+*/
+$font-sizes: 10px + 20px;
+$style: (
+        color: #bdc3c7
+);
+
+.container {
+  @debug $style;
+  @debug $font-sizes;
+}

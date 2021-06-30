@@ -1,0 +1,21 @@
+/**
+06/29/21 night
+https://sass-lang.com/documentation/at-rules/warn
+https://www.tutorialspoint.com/sass/directives_error.htm
+*/
+
+$colors: (
+        blue: #c0392b,
+        black: #2980b9,
+);
+
+@function style-variation($style) {
+  @if map-has-key($colors, $style) {
+    @return map-get($colors, $style);
+  }
+  @error "Invalid color: '#{$style}'.";
+}
+
+.container {
+  style: style-variation(white);
+}

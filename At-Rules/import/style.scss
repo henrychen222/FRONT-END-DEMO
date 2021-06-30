@@ -1,0 +1,20 @@
+/**
+12.15 evening
+https://www.tutorialspoint.com/sass/directives_import.htm
+https://sass-lang.com/documentation/at-rules/import
+compile:
+sass --watch style.scss:style.css
+*/
+@import "partial";
+
+.container {
+  background: #ffff;
+}
+
+h1 {
+  color: #77C1EF;
+}
+
+h4 {
+  color: #B98D25;
+}

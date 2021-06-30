@@ -1,0 +1,21 @@
+/**
+06/16/21 evneing
+https://www.tutorialspoint.com/sass/directives_atroot.htm
+https://sass-lang.com/documentation/at-rules/at-root
+compile:
+sass atroot.scss:atroot.css
+*/
+
+
+h2 {
+  color: #808000;
+  background-color: #DB7093;
+
+  @at-root {
+    .style {
+      font-size: 20px;
+      font-style: bold;
+      color: #B8860B;
+    }
+  }
+}

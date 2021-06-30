@@ -1,0 +1,19 @@
+/**
+12.15 evening
+https://www.tutorialspoint.com/sass/directives_media.htm
+https://sass-lang.com/documentation/at-rules/css#media
+compile:
+sass --watch media.scss:media.css
+*/
+h2 {
+  color: #77C1EF;
+}
+
+.style {
+  width: 900px;
+
+  @media screen and (orientation: portrait) {
+    width: 500px;
+    margin-left: 120px;
+  }
+}
