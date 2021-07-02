@@ -1,0 +1,17 @@
+/**
+  06/30/21 night
+  https://www.tutorialspoint.com/sass/else_if.htm
+  https://sass-lang.com/documentation/at-rules/control/if#else-if
+ */
+$type: audi;
+p {
+  @if $type == benz {
+    color: red;
+  } @else if $type == mahindra {
+    color: blue;
+  } @else if $type == audi {
+    color: green;
+  } @else {
+    color: black;
+  }
+}

@@ -1,0 +1,19 @@
+/**
+  06/30/21 night
+  https://www.tutorialspoint.com/sass/if.htm
+  https://sass-lang.com/documentation/at-rules/control/if
+ */
+p {
+  @if 10 + 10 == 20 {
+    border: 1px dotted;
+    color: green;
+  }
+  @if 7 < 2 {
+    border: 2px solid;
+    color: orchid;
+  }
+  @if null {
+    border: 3px double;
+    color: purple;
+  }
+}
