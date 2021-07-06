@@ -1,0 +1,14 @@
+/**
+  07/05/21 night
+  https://www.tutorialspoint.com/sass/passing_content_blocks_to_mixin.htm
+  https://sass-lang.com/documentation/at-rules/mixin#content-blocks
+*/
+@mixin element {
+  @content;
+}
+
+@include element {
+  .block {
+    color: green;
+  }
+}

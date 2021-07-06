@@ -1,0 +1,15 @@
+/**
+  07/05/21 night
+  https://www.tutorialspoint.com/sass/arguments.htm
+  https://sass-lang.com/documentation/at-rules/mixin#keyword-arguments
+  https://sass-lang.com/documentation/at-rules/mixin#optional-arguments
+*/
+@mixin bordered($width: 2px) {
+  background-color: #77C1EF;
+  border: $width solid black;
+  width: 450px;
+}
+
+.style {
+  @include bordered(2px);
+}

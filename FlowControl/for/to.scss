@@ -1,0 +1,11 @@
+/**
+  07/01/21 night
+  https://www.tutorialspoint.com/sass/for_to.htm
+  https://sass-lang.com/documentation/at-rules/control/for
+*/
+
+@for $i from 1 to 4 {   // 1 <= x < 4
+  .p#{$i} {
+    padding-left: $i * 10px;
+  }
+}

@@ -1,0 +1,15 @@
+/**
+  07/05/21 night
+  https://www.tutorialspoint.com/sass/sass_function_directives.htm
+  https://sass-lang.com/documentation/at-rules/function
+*/
+$first-width: 5px;
+$second-width: 5px;
+
+@function adjust_width($n) {
+  @return $n * $first-width + ($n - 1) * $second-width;
+}
+
+#set_width {
+  padding-left: adjust_width(10);
+}

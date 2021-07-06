@@ -1,0 +1,11 @@
+/**
+  07/05/21 night
+  https://www.tutorialspoint.com/sass/datatypes.htm
+  https://sass-lang.com/documentation/values
+    https://sass-lang.com/documentation/values/strings
+*/
+$name: "tutorialspoint";
+
+p.#{$name} { //  #{ }: String
+  color: blue;
+}

@@ -1,0 +1,11 @@
+/**
+  07/01/21 night
+  https://www.tutorialspoint.com/sass/each.htm
+  https://sass-lang.com/documentation/at-rules/control/each
+*/
+
+@each $color in red, green, yellow, blue {
+  .p_#{$color} {
+    background-color: #{$color};
+  }
+}

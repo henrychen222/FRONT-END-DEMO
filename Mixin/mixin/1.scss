@@ -1,0 +1,13 @@
+/**
+  07/05/21 night
+  https://www.tutorialspoint.com/sass/defining_a_mixin.htm
+  https://sass-lang.com/documentation/at-rules/mixin
+*/
+// @mixin allow you to define styles that can be re-used throughout your stylesheet
+@mixin style {
+  .cont {
+    color: #77C1EF;
+  }
+}
+
+@include style;

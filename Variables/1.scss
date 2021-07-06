@@ -1,0 +1,12 @@
+/**
+  07/05/21 night
+  https://www.tutorialspoint.com/sass/variables.htm
+  https://sass-lang.com/documentation/variables
+*/
+$txtcolor: #008000; // Variables are defined with dollar sign ($) and ends with semicolon (;)
+$fontSize: 20px;
+
+p {
+  color: $txtcolor;
+  font-size: $fontSize;
+}

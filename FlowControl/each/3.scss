@@ -1,0 +1,10 @@
+/**
+  07/01/21 night
+  https://www.tutorialspoint.com/sass/each_multiple_map.htm
+  https://sass-lang.com/documentation/at-rules/control/each
+*/
+@each $header, $color in (h1: red, h2: green, h3: blue) {
+  #{$header} {
+    color: $color;
+  }
+}
