@@ -1,0 +1,11 @@
+/**
+  07/12/21 night
+  https://www.tutorialspoint.com/sass/boolean_operations.htm
+  https://sass-lang.com/documentation/operators/boolean
+*/
+$age: 20;
+.bool {
+  @if ($age > 10 and $age < 25) {
+    color: green;
+  }
+}

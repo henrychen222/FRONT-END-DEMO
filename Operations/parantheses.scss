@@ -1,0 +1,9 @@
+/**
+  07/12/21 night
+  https://www.tutorialspoint.com/sass/parentheses.htm
+  https://sass-lang.com/documentation/operators#parentheses
+*/
+p {
+  font-size: 5px + (6px * 2);
+  color: #ff0000;
+}

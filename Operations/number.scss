@@ -1,0 +1,22 @@
+/**
+  07/12/21 night
+  https://www.tutorialspoint.com/sass/number_operations.htm
+  https://sass-lang.com/documentation/operators/numeric
+*/
+$size: 25px;
+
+h2 {
+  font-size: $size + 5;
+}
+
+h3 {
+  font-size: $size / 5;
+}
+
+.para1 {
+  font-size: $size * 1.5;
+}
+
+.para2 {
+  font-size: $size - 10;
+}

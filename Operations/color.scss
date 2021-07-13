@@ -1,0 +1,14 @@
+/**
+  07/12/21 night
+  https://www.tutorialspoint.com/sass/color_operations.htm
+*/
+$color1: #333399;
+$color2: #CC3399;
+
+p {
+  // color: $color1 + $color2; // compiler error
+  color: mix($color1, $color2, 0%); // https://subscription.packtpub.com/book/web_development/9781849694544/4/ch04lvl1sec45/the-mix-function
+}
+
+
+
