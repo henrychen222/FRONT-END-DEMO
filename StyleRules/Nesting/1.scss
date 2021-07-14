@@ -1,0 +1,28 @@
+/**
+  07/13/21 night
+  https://www.tutorialspoint.com/sass/nested_rules.htm
+  https://sass-lang.com/documentation/style-rules#nesting
+*/
+.container {
+  h1 {
+    font-size: 25px;
+    color: #E45456;
+  }
+
+  p {
+    font-size: 25px;
+    color: #3C7949;
+  }
+
+  .box {
+    h1 {
+      font-size: 25px;
+      color: #E45456;
+    }
+
+    p {
+      font-size: 25px;
+      color: #3C7949;
+    }
+  }
+}

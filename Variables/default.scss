@@ -1,0 +1,11 @@
+/**
+  07/13/21 night
+  https://www.tutorialspoint.com/sass/var_defaults.htm
+  https://sass-lang.com/documentation/variables#default-values
+*/
+$myval1: null;
+$myval1: "Sass Developed by Natalie Weizenbaum and Chris Eppstein" !default;
+
+p:after {
+  content: $myval1;
+}

@@ -1,0 +1,19 @@
+/**
+  07/13/21 night
+  https://www.tutorialspoint.com/sass/placeholder_selectors.htm
+  https://sass-lang.com/documentation/style-rules/placeholder-selectors
+*/
+.frst_para {
+  color: green;
+}
+
+.sec_para {
+  // @extend .frst_para;
+  @extend %p-format; // @extend % for placeholder selectors
+  font-size: 20px;
+}
+
+// https://www.geeksforgeeks.org/sass-placeholder-selectors/
+%p-format {
+  color: red;
+}

@@ -1,0 +1,12 @@
+/**
+  07/13/21 night
+  https://www.tutorialspoint.com/sass/parent_selectors.htm
+  https://sass-lang.com/documentation/style-rules/parent-selector
+*/
+a {
+  font-size: 20px;
+
+  &:hover { // & parent selector
+    background-color: yellow;
+  }
+}
