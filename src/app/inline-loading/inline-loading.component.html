@@ -1,0 +1,9 @@
+<ibm-inline-loading
+  [state]="state"
+  [loadingText]="'Loading data...'"
+  [successText]="'Data loaded.'"
+  [errorText]="'Data not found.'"
+  (onSuccess)="onSuccess($event)">
+</ibm-inline-loading>
+<button ibmButton='primary' (click)="toggleState()">Toggle state</button>
+<p>State: {{ state }}</p>

@@ -1,0 +1,16 @@
+<ibm-dropdown
+  [label]="label"
+  [helperText]="helperText"
+  [size]="'md'"
+  [dropUp]="dropUp"
+  [invalid]="invalid"
+  [invalidText]="invalidText"
+  [warn]="warn"
+  [warnText]="warnText"
+  [theme]="'dark'"
+  placeholder="Select"
+  [disabled]="disabled"
+  (selected)="selected($event)"
+  (onClose)="onClose($event)">
+  <ibm-dropdown-list [items]="items"></ibm-dropdown-list>
+</ibm-dropdown>

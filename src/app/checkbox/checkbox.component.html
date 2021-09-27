@@ -1,0 +1,25 @@
+<fieldset class="bx--fieldset">
+  <legend class="bx--label">{{label[0]}}</legend>
+  <ibm-checkbox
+    [checked]="true"
+    [hideLabel]="hideLabel"
+    (change)="onChange($event)">
+    Checkbox
+  </ibm-checkbox>
+
+  <ibm-checkbox
+    [indeterminate]="false"
+    (change)="onChange($event)"
+    [hideLabel]="hideLabel"
+    (indeterminateChange)="onIndeterminateChange($event)">
+    Indeterminate checkbox
+  </ibm-checkbox>
+
+  <ibm-checkbox
+    [disabled]="true"
+    (change)="onChange($event)"
+    [hideLabel]="hideLabel"
+    (indeterminateChange)="onIndeterminateChange($event)">
+    Disabled checkbox
+  </ibm-checkbox>
+</fieldset>
